@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <span class="tips">完成度 2.3 / 4</span>
+        <span class="tips">完成度 3.7 / 5</span>
+        <span class="tips">纯 FE，没有架服务</span>
         <div class="content">
             <span>感谢</span>
             <p>UI：隋同学</p>
@@ -11,10 +12,11 @@
             <p>https://github.com/Crayoncyann/WechatPokemonQuest.git</p>
         </div>
         <div class="content">
-            <span>一个后台</span>
+            <span>一个方可梦查询系统</span>
             <p>侵删 ( ゜- ゜)つロ</p>
-            <p>方可梦查询系统</p>
-            <p>http://www.oowen.cn/index.php</p>
+            <p>做的相当全了，如果你要查东西就来这里</p>
+            <p>Pokemon Quest Recipes</p>
+            <p>https://pokequestrecipes.me</p>
         </div>
         <span class="tips">不知道小程序怎么跳转外部链接...懒得查了...</span>
         <br>

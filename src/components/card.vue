@@ -2,12 +2,12 @@
     <div class="card">
         <div class="card-title">
             <img src="/static/image/titleBall.png" alt="">
-            <span>{{ title }}</span>
+            <span>{{ name }}</span>
         </div>
-        <div class="card-info" v-if="infoSrc">
+        <div class="card-info" v-if="src">
             <div>
-                <img :src="infoSrc || ''">
-                <span v-for="info in infoList">{{ info + ' ' }}</span>
+                <img :src="src">
+                <span v-for="info in cook">{{ info + ' ' }}</span>
             </div>
             <div v-if="ability" v-for="(item, i) in ability">
                 <img :src="item.src">
@@ -21,10 +21,10 @@
 export default {
     name: 'v-card',
     props: {
-        title: String,
-        infoSrc: String,
-        infoList: Array,
-        ability: Object,
+        name: String,
+        src: String,
+        cook: Array,
+        ability: Array,
     },
 }
 </script>
@@ -77,11 +77,11 @@ export default {
         width: 40px;
         height: 40px;
         border-radius: 6px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
 
     .card-info span {
         position: relative;
-        top: -13px;
+        top: -14px;
     }
 </style>

@@ -1,7 +1,8 @@
 <template>
     <div class="all">
+        <p class="home-hint">数据来自百度百科</p>
         <ul>
-            <li v-for="(item, index) in items" :key="index">
+            <li v-for="(item, index) in pokemons" :key="index">
                 <p class="all-title">{{ item.id }}</p>
                 <div class="all-info">
                     <img :src="item.src" alt="">
@@ -13,25 +14,13 @@
 </template>
 
 <script>
-import pokemon from '../../js/pokemon'
+import pokemons from '../../js/pokemon'
 
 export default {
     name: 'v-all',
     data() {
         return {
-            items: [],
-            names: pokemon
-        }
-    },
-    created() {
-        let url = '/static/image/pokemonAll/'
-        for (var i = 1; i < 55; i++) {
-            let obj = {
-                id: i,
-                name: this.names[i - 1],
-                src: `${url}${i}.png`,
-            }
-            this.items.push(obj)
+            pokemons: pokemons,
         }
     },
 }
@@ -39,7 +28,13 @@ export default {
 
 <style scoped>
     .all {
-        padding: 0 20px 20px 20px;
+        padding: 0 20px;
+    }
+
+    .home-hint {
+        font-size: 14px;
+        color: #00566B;
+        margin-bottom: 20px;
     }
 
     .all ul {
@@ -53,10 +48,10 @@ export default {
     .all li {
         float: left;
         position: relative;
-        margin: 10px 1.5%;
+        margin: 0 4.166% 20px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        width: 22%;
+        width: 25%;
     }
 
     .all li p {
@@ -67,9 +62,11 @@ export default {
     .all-title {
         text-align: left;
         width: 28px;
-        padding: 3px 5px 0;
+        padding: 2px 5px;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        border: 2px solid #008AAC;
+        border-bottom: none;
     }
 
     .all-info {
@@ -78,6 +75,7 @@ export default {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
         box-shadow: 5px 5px 10px #888888;
+        border: 2px solid #008AAC;
     }
 
     .all-info p {

@@ -13,9 +13,7 @@
             <div class="content">
                 <v-home v-if="titles[0].active"></v-home>
                 <v-article v-if="titles[1].active"></v-article>
-                <div v-if="titles[2].active">
-                    <img src="/static/image/all.png" class="all">
-                </div>
+                <v-cook v-if="titles[2].active"></v-cook>
                 <v-all v-if="titles[3].active"></v-all>
             </div>
         </div>
@@ -27,8 +25,7 @@ import vLogo from '../../components/logo'
 import vHome from '../home/home'
 import vArticle from '../home/article'
 import vAll from '../home/all'
-
-import { log } from '../../utils'
+import vCook from '../home/cook'
 
 export default {
     data() {
@@ -51,7 +48,6 @@ export default {
                     active: false,
                 },
             ],
-            // cards: pokemon,
         }
     },
     components: {
@@ -59,6 +55,7 @@ export default {
         vHome,
         vArticle,
         vAll,
+        vCook,
     },
     methods: {
         handleClickTitle(index) {
@@ -72,9 +69,6 @@ export default {
             }
         },
     },
-    created() {
-
-    }
 }
 </script>
 

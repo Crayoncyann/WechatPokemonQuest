@@ -14,7 +14,7 @@
                 <br>
                 <span class="card-rec-info">* 完美落石可继续培养</span>
                 <template v-for="card in dayanshe">
-                    <v-card :title="card.title" :infoSrc="card.info.src" :infoList="card.info.list" :ability="card.ability"></v-card>
+                    <v-card :name="card.name" :src="card.src" :cook="card.cook" :ability="card.ability"></v-card>
                 </template>
             </div>
         </section>
@@ -28,7 +28,7 @@
                 <br>
                 <span class="card-rec-info">推荐能力槽 6 血，技能槽必须恒恒恒</span>
                 <template v-for="card in niduolan">
-                    <v-card :title="card.title" :infoSrc="card.info.src" :infoList="card.info.list" :ability="card.ability"></v-card>
+                    <v-card :name="card.name" :src="card.src" :cook="card.cook" :ability="card.ability"></v-card>
                 </template>
             </div>
         </section>
@@ -44,7 +44,7 @@
                 <br>
                 <span class="card-rec-info">宾果以减技能 CD 为主，目前减少普攻 CD 我只知道超梦有</span>
                 <template v-for="card in defs">
-                    <v-card :title="card.title" :infoSrc="card.info.src" :infoList="card.info.list" :ability="card.ability"></v-card>
+                    <v-card :name="card.name" :src="card.src" :cook="card.cook" :ability="card.ability"></v-card>
                 </template>
             </div>
         </section>
@@ -60,7 +60,7 @@
                 <br>
                 <span class="card-rec-info">宾果以当前技能系加攻、减少 CD 为主，</span>
                 <template v-for="card in atts">
-                    <v-card :title="card.title" :infoSrc="card.info.src" :infoList="card.info.list" :ability="card.ability"></v-card>
+                    <v-card :name="card.name" :src="card.src" :cook="card.cook" :ability="card.ability"></v-card>
                 </template>
             </div>
         </section>
@@ -70,10 +70,7 @@
 <script>
 import vCard from '../../components/card'
 
-import atts from '../../js/att'
-import defs from '../../js/def'
-import dayanshe from '../../js/dayanshe'
-import niduolan from '../../js/niduolan'
+import pokemons from '../../js/pokemon'
 
 export default {
     name: 'v-article',
@@ -88,10 +85,10 @@ export default {
             status3: false,
             status4: false,
             active: '',
-            atts: atts,
-            defs: defs,
-            dayanshe: dayanshe,
-            niduolan: niduolan,
+            atts: [pokemons[0], pokemons[68], pokemons[113], pokemons[54], pokemons[116], pokemons[120],],
+            defs: [pokemons[61], pokemons[64], pokemons[65], pokemons[72], pokemons[79], pokemons[88], pokemons[90],],
+            dayanshe: [pokemons[94]],
+            niduolan: [pokemons[28]],
         }
     },
     methods: {
@@ -147,7 +144,7 @@ export default {
         position: relative;
         max-height: 0;
         opacity: 0;
-        transition: opacity 0.5s, max-height 0.7s;
+        transition: opacity 0.5s, max-height 0.6s;
         overflow: hidden;
     }
 

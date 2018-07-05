@@ -71,11 +71,12 @@
             </div>
             <div class="content"  :class="{'content-hover': status5}">
                 <p class="home-hint">以下都以水炮为例</p>
-                <p>1. 伤害技能推荐水炮、藤鞭，防御技能看个人喜好</p>
-                <p>2. 部分宝可梦初始形态是洗不出技能的，需进化，如海星星需进化到宝石海星</p>
-                <p>3. 洗技能最好使用相同宝可梦，同系宝可梦，增加成功率</p>
-                <p>4. 如果成功率很低，那么你该换一只宝可梦培养了</p>
-                <p>5. 龙星群并没有你想象的强力 (°ー°〃)</p>
+                <p>1. 最好单技能，因为可以强化到最强</p>
+                <p>2. 伤害技能推荐水炮、藤鞭，防御技能看个人喜好</p>
+                <p>3. 部分宝可梦初始形态是洗不出技能的，需进化，如海星星需进化到宝石海星</p>
+                <p>4. 洗技能最好使用相同宝可梦，同系宝可梦，增加成功率</p>
+                <p>5. 如果成功率很低，那么你该换一只宝可梦培养了</p>
+                <p>6. 龙星群并没有你想象的强力 (°ー°〃)</p>
             </div>
         </section>
     </div>
@@ -136,7 +137,7 @@ export default {
         line-height: 30px;
         max-height: 0;
         opacity: 0;
-        transition: opacity 0.5s, max-height 0.7s;
+        transition: opacity 0.5s, max-height 0.6s;
         overflow: hidden;
     }
 
