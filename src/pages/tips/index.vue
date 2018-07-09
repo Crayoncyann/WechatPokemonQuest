@@ -1,10 +1,10 @@
 <template>
     <div id="app">
-        <span class="tips">完成度 3.7 / 5</span>
+        <span class="tips">完成度 4.5 / 5</span>
         <span class="tips">纯 FE，没有架服务</span>
         <div class="content">
             <span>感谢</span>
-            <p>UI：隋同学</p>
+            <p>UI、食谱：隋同学</p>
         </div>
         <div class="content">
             <span>小程序项目地址</span>

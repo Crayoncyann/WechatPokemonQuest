@@ -7,7 +7,7 @@
         <div class="card-info" v-if="src">
             <div>
                 <img :src="src">
-                <span v-for="info in cook">{{ info + ' ' }}</span>
+                <img class="cook" v-for="info in cook" :src="info" alt="">
             </div>
             <div v-if="ability" v-for="(item, i) in ability">
                 <img :src="item.src">
@@ -69,6 +69,7 @@ export default {
     }
 
     .card-info div {
+        position: relative;
         margin: 10px 0;
     }
 
@@ -83,5 +84,14 @@ export default {
     .card-info span {
         position: relative;
         top: -14px;
+    }
+
+    .cook {
+        position: relative;
+        top: -7px;
+        margin-right: 5px;
+        width: 28px !important;
+        height: 28px !important;
+        border-radius: 5px;
     }
 </style>
