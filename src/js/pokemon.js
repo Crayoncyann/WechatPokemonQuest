@@ -239,12 +239,12 @@ setPokemon()
 
 // 技能
 const storeList = {
-    '团团石': '团团石',
-    '快快石': '快快石',
-    '连连石': '连连石',
-    '多多石': '多多石',
-    '恒恒石': '恒恒石',
-    '展展石': '展展石',
+    '团团石': '/static/image/skill/tuan.png',
+    '快快石': '/static/image/skill/kuai.png',
+    '连连石': '/static/image/skill/lian.png',
+    '多多石': '/static/image/skill/duo.png',
+    '恒恒石': '/static/image/skill/heng.png',
+    '展展石': '/static/image/skill/zhan.png',
 }
 
 const abilityObj = (src, list) => {
@@ -315,8 +315,8 @@ const mwzz = {
     list: ['连连石', '展展石', '展展石',],
 }
 
-const lby = {
-    id: 69,
+const kdh = {
+    id: 70,
     cook: ['大红', '小红', '小黄', '小黄', '小黄',],
     src: 'tengbian',
     list: ['连连石', '展展石', '展展石',],
@@ -403,7 +403,7 @@ let setList = [
     dys,
     ndl,
     mwzz,
-    lby,
+    kdh,
     tmg,
     gdy,
     hcl,

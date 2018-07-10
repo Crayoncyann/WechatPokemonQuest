@@ -8,11 +8,15 @@
                     <span>{{ item.name }}</span>
                 </div>
                 <div class="content">
-                    <img :src="item.src" alt="">
+                    <img class="content-src" :src="item.src" alt="">
                     <div class="info">
                         <span>{{ item.infos.pokemon }}</span>
                         <br>
-                        <span v-for="(info, j) in item.infos.info">{{ info + ' ' }}</span>
+                        <!-- <span v-for="(info, j) in item.infos.info">{{ info + ' ' }}</span> -->
+                        <span v-if="i == 0">{{ item.infos.info }}</span>
+                        <div v-if="i != 0" class="material">
+                            <img v-for="(info, j) in item.infos.info" :src="info" alt="">
+                        </div>
                     </div>
                 </div>
             </li>
@@ -76,7 +80,7 @@ export default {
         box-shadow: 5px 5px 10px #888888;
     }
 
-    .content img {
+    .content .content-src {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -98,5 +102,12 @@ export default {
     .content .info span {
         line-height: 30px;
         font-size: 15px;
+    }
+
+    .cook .content .material img {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin-right: 7px;
     }
 </style>

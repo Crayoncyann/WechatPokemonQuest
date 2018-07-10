@@ -9,9 +9,9 @@
                 <img :src="src">
                 <img class="cook" v-for="info in cook" :src="info" alt="">
             </div>
-            <div v-if="ability" v-for="(item, i) in ability">
+            <div v-if="ability.length != 0" v-for="(item, i) in ability">
                 <img :src="item.src">
-                <span v-for="(l, j) in item.list">{{ l + ' ' }}</span>
+                <img class="ability" v-for="(l, j) in item.list" :src="l" alt="">
             </div>
         </div>
     </div>
@@ -92,6 +92,12 @@ export default {
         margin-right: 5px;
         width: 28px !important;
         height: 28px !important;
+        border-radius: 5px;
+    }
+
+    .ability {
+        position: relative;
+        margin-right: 5px;
         border-radius: 5px;
     }
 </style>

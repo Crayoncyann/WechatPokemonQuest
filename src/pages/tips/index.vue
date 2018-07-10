@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <span class="tips">完成度 4.5 / 5</span>
         <span class="tips">纯 FE，没有架服务</span>
         <div class="content">
             <span>感谢</span>
@@ -33,6 +32,7 @@ export default {
     #app {
         font-size: 20px;
         color: #333333;
+        padding: 20px 0;
     }
 
     .tips {

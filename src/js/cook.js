@@ -4,16 +4,16 @@ const cookName = ['方可乐大杂烩', '方可乐红炖汤', '方可乐蓝苏�
 
 // 食材
 const cookList = {
-    '小红': '小红',
-    '小蓝': '小蓝',
-    '小黄': '小黄',
-    '小灰': '小灰',
-    '大红': '大红',
-    '大蓝': '大蓝',
-    '大黄': '大黄',
-    '大灰': '大灰',
-    '彩色': '彩色',
-    '海螺': '海螺',
+    '小红': '/static/image/material/smallr.png',
+    '小蓝': '/static/image/material/smallb.png',
+    '小黄': '/static/image/material/smally.png',
+    '小灰': '/static/image/material/smallg.png',
+    '大红': '/static/image/material/bigr.png',
+    '大蓝': '/static/image/material/bigb.png',
+    '大黄': '/static/image/material/bigy.png',
+    '大灰': '/static/image/material/bigg.png',
+    '彩色': '/static/image/material/color.png',
+    '海螺': '/static/image/material/conch.png',
 }
 
 const cook = (list) => {
@@ -95,7 +95,7 @@ const cookInfo = [
         info: cook(['小红', '小红', '小蓝', '小蓝', '大黄',])
     },
     {
-        pokemon: '格斗系宝可梦',
+        pokemon: '珍奇宝可梦',
         info: cook(['小红', '小蓝', '小黄', '小灰', '海螺',])
     },
 ]

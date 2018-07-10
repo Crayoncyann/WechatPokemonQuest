@@ -85,7 +85,7 @@ export default {
             status3: false,
             status4: false,
             active: '',
-            atts: [pokemons[0], pokemons[68], pokemons[113], pokemons[54], pokemons[116], pokemons[120],],
+            atts: [pokemons[0], pokemons[69], pokemons[113], pokemons[54], pokemons[116], pokemons[120],],
             defs: [pokemons[61], pokemons[64], pokemons[65], pokemons[72], pokemons[79], pokemons[88], pokemons[90],],
             dayanshe: [pokemons[94]],
             niduolan: [pokemons[28]],
